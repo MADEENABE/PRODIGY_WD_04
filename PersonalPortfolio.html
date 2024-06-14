@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Developer Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 40px 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            margin-bottom: 20px;
+        }
+        .profile-photo {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+        .project-item {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: left;
+            display: inline-block;
+        }
+        .project-item h3 {
+            margin-top: 0;
+        }
+        .project-item p {
+            margin-bottom: 10px;
+        }
+        .project-item a {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .project-item a:hover {
+            background-color: #555;
+        }
+        .section-bg {
+            background-image: linear-gradient(to bottom, #ffffff, #f0f0f0);
+            padding: 60px 20px;
+        }
+        .section-bg-alt {
+            background-image: linear-gradient(to bottom, #f0f0f0, #ffffff);
+            padding: 60px 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li::before {
+            content: "\2022";
+            color: #333;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section-bg">
+        <h1>Welcome to My Portfolio</h1>
+        <h2>Crafting Visually Stunning & Efficient Websites</h2>
+        <img src="Banner.jpg" alt="Profile Photo" class="profile-photo">
+        <p>Hi, I am Patan.Madeenabe, a passionate Web Developer specialized in creating beautiful and functional websites.</p>
+    </section>
+
+    <section id="about" class="section-bg-alt">
+        <h2>About Me</h2>
+        <p>I am a dedicated web developer with a passion for creating stunning and efficient websites. I have a background in computer science and over [X] years of professional experience in the web development industry.</p>
+        <h3>Education</h3>
+        <ul>
+            <li>Bachelor of Science in Computer Science, IIIT Srikakulam, 3rd year</li>
+        </ul>
+        <h3>Professional Experience</h3>
+        <ul>
+            <li>Web Developer at Prodigy Info Tech, 2024- Present
+                <ul>
+                    <li>Developed and maintained the company website</li>
+                    <li>Collaborated with designers to create a user-friendly interface</li>
+                    <li>Optimized website performance and SEO</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section id="skills" class="section-bg">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>C Programming</li>
+            <li>Java Programming</li>
+            <li>Data Structures & Algorithms</li>
+            <li>Problem Solving</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="section-bg-alt">
+        <h2>Projects</h2>
+        <div class="project-item">
+            <h3>Stopwatch Web Application</h3>
+            <p>This project is a web-based stopwatch application built using HTML, CSS, and JavaScript. It allows users to start, pause, and reset the stopwatch, providing accurate time measurements.</p>
+            <a href="https://github.com/MADEENABE/PRODIGY_WD_02">View Project</a>
+        </div>
+        <div class="project-item">
+            <h3>Tic-Tac-Toe Game</h3>
+            <p>This project is a classic Tic-Tac-Toe game implemented using HTML, CSS, and JavaScript. It includes player vs. player mode, player vs. computer mode with varying difficulty levels, and a responsive design for optimal gameplay experience.</p>
+            <a href="https://github.com/MADEENABE/PRODIGY_WD_03">View Project</a>
+        </div>
+    </section>
+
+    <section id="contact" class="section-bg-alt">
+        <h2>Contact Me</h2>
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+            
+            <input type="submit" value="Send">
+        </form>
+        <p>Follow me on <a href="your-social-media-link">[Social Media]</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Patan Madeenabe. All rights reserved.</p>
+    </footer>
+</body>
+</html>
